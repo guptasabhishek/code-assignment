@@ -1,6 +1,6 @@
 # code-assignment 
 
-code-assignment 
+code-assignment: PageviewCMS_POOL
  
 Assumptions: 
 
@@ -96,3 +96,8 @@ Tasks
 10. delta_load_unlock_ts: Update current job end date, close window. 
 
 Based on the windowing process defined in task 1 and 10, we have fault tolerance for today’s executions. If for some reason, and task between 1 and 10 fails, during the next the dag execution the start window will be set to the last completed job, hence maintaining data freshness. 
+
+
+code-assignment: SimpleAPI
+
+For this exercise, once data has been extratced from the api and stored in the required data repositor, the next tasks within the DAG would be to update the existing target table using state abbreviation as the key and governor last and first names as attributes. Considering there are only 50 states, this should be a fairly straight forward.
