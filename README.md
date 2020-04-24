@@ -27,7 +27,7 @@ Thank you Alex for answering these!!!!!
 
 3. Are these source tables partitioned, to avoid full table scans while accessing them. 
 
---For partitions, let’s say that currently there is no partitioning on any of these tables… could you provide a suggestion on how you ----might partition the tables to optimize for this use case. 
+--For partitions, let’s say that currently there is no partitioning on any of these tables… could you provide a suggestion on how you might partition the tables to optimize for this use case. 
 
 4. Content table has a version column. Is a new record inserted into the content table with an incremental version number? i.e Can rows duplicate for each contentId, but the grain is at the contentId + version level? Or existing record updated with a new version number? 
 For this slowly chaining dim, is there an SCD requirement (1,2,3)? 
