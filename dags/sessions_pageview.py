@@ -8,16 +8,18 @@ from datetime import timedelta
 
 
 default_args = {
+    'owner': 'airflow',
     'retries': 1,
     'retry_delay': timedelta(minutes=1),
-    'start_date': airflow.utils.dates.days_ago(0)
+    'start_date': airflow.utils.dates.days_ago(0),
+    'schedule_interval': '@hourly'
 }
 
 dag = DAG(
     'sessions_pageview',
     default_args=default_args,
-    description='DAG to read latest data from source and update into target tables',
-    schedule_interval=None)
+    description='DAG to read latest data from source and update into target tables'
+    )
 
 sqlDir = 'bq-sql/'
 
