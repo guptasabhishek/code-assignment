@@ -100,4 +100,4 @@ Based on the windowing process defined in task 1 and 10, we have fault tolerance
 
 code-assignment: SimpleAPI
 
-For this exercise, once data has been extratced from the api and stored in the required data repositor, the next tasks within the DAG would be to update the existing target table using state abbreviation as the key and governor last and first names as attributes. Considering there are only 50 states, this should be a fairly straight forward.
+For this exercise, once data has been extracted from the api and stored in the required data repository, the next tasks within the DAG would be to update the existing target table using state abbreviation as the key and governor last and first names as attributes. Considering there are only 50 states, this should be a fairly straight forward. 
