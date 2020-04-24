@@ -4,9 +4,7 @@ code-assignment
  
 Assumptions: 
 
-1. I am designing the underlying physical data model (facts, dims) based on the two tables (pageviews, and content). Product owner will     then design the datasets/metadata layer in Tableau, Looker etc, utilizing these fact and dim tables, addressing each of their use-        cases. 
-
-Initial full load, followed by incremental loads. 
+1. I am designing the underlying physical data model (facts, dims) based on the two tables (pageviews, and content). Product owner will     then design the datasets/metadata layer in Tableau, Looker etc, utilizing these fact and dim tables, addressing each of their use-        cases. Initial full load, followed by incremental loads. 
 
 2. pageview table is partitioned by date(timestamp) for column timestamp 
   **recommendation** can this column name be changed to some other name like activtyTimestamp etc, considering timestamp is a reserved      keyword in most SQL implementations.  
