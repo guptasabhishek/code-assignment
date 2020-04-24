@@ -31,11 +31,11 @@ Thank you Alex for answering these!!!!!
 For this slowly chaining dim, is there an SCD requirement (1,2,3)? 
 Or for this exercise should I assume there is always only one record per contentID in the content table. 
 
---The version expands contentType by describing which version “schema” was used to create the specific piece of content. contentId is ----the natural key for this table. 
+--The version expands contentType by describing which version “schema” was used to create the specific piece of content. contentId is the natural key for this table. 
 
 5. For the average user session duration trends requirement, I see sessionId on the pageviews table, but no additional metadata related to sessionId. 
 
---User sessions are managed on the client side, so when a record comes in the sessionId already exists. With the assumption that the -----client will always send you the valid sessionId for the user, you would just need to ensure this value can be used efficiently as a ----dimension. 
+--User sessions are managed on the client side, so when a record comes in the sessionId already exists. With the assumption that the client will always send you the valid sessionId for the user, you would just need to ensure this value can be used efficiently as a dimension. 
 
 6. I am a bit confused between pageUrl and referrerUrl. Is referreURL the parent page from when the user navigated to the current page, and so forth? 
 
