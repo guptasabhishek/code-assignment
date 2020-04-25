@@ -21,7 +21,7 @@ dag = DAG(
     description='DAG to read latest data from source and update into target tables'
     )
 
-sqlDir = 'bq-sql/'
+sqlDir = 'sql/'
 
 # [START delta_load_lock_ts]
 delta_load_lock_ts = BigQueryOperator(
